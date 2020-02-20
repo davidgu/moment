@@ -2,6 +2,7 @@ import { isMoment } from './constructor';
 import { normalizeUnits } from '../units/aliases';
 import { createLocal } from '../create/local';
 
+// https://app.gethyperdoc.com/t/77Mz9anxiy1966gbUUrl
 export function isAfter (input, units) {
     var localInput = isMoment(input) ? input : createLocal(input);
     if (!(this.isValid() && localInput.isValid())) {
@@ -28,6 +29,7 @@ export function isBefore (input, units) {
     }
 }
 
+// https://app.gethyperdoc.com/t/xLDiA4KQ63rzyrGslYz2
 export function isBetween (from, to, units, inclusivity) {
     var localFrom = isMoment(from) ? from : createLocal(from),
         localTo = isMoment(to) ? to : createLocal(to);

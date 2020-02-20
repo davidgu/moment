@@ -13,6 +13,7 @@ export function getCalendarFormat(myMoment, now) {
             diff < 7 ? 'nextWeek' : 'sameElse';
 }
 
+// https://app.gethyperdoc.com/t/efGLY6O77LgbeW8hczEP
 export function calendar (time, formats) {
     // We want to compare the start of today, vs this.
     // Getting start-of-today depends on whether we're local/utc/offset or not.

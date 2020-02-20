@@ -7,6 +7,7 @@ import absRound from '../utils/abs-round';
 
 
 // TODO: remove 'name' arg after deprecation is removed
+// https://app.gethyperdoc.com/t/B6p7f4EZ9MdLepRpLa6e
 function createAdder(direction, name) {
     return function (val, period) {
         var dur, tmp;
@@ -24,6 +25,7 @@ function createAdder(direction, name) {
     };
 }
 
+// https://app.gethyperdoc.com/t/C9B4d76k0TgMwVb5wMa8
 export function addSubtract (mom, duration, isAdding, updateOffset) {
     var milliseconds = duration._milliseconds,
         days = absRound(duration._days),

@@ -100,6 +100,7 @@ function shiftWeekdays (ws, n) {
     return ws.slice(n, 7).concat(ws.slice(0, n));
 }
 
+// https://app.gethyperdoc.com/t/PPb8HwIAQysNneDqgMUs
 export var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
 export function localeWeekdays (m, format) {
     var weekdays = isArray(this._weekdays) ? this._weekdays :
